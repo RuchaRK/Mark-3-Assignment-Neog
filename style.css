@@ -1,0 +1,17 @@
+body {
+    color: slateblue ;
+    background-color: beige;
+    
+}
+h1{
+    color:purple;
+}
+h2{
+    color: green;
+}
+#lib-header{
+    color: palevioletred;
+}
+.para{
+    color: orange;
+}
