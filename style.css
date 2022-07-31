@@ -1,4 +1,4 @@
-body {
+/* body {4
     color: slateblue ;
     background-color: beige;
     
@@ -14,4 +14,12 @@ h2{
 }
 .para{
     color: orange;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body{
+    font-family: 'Playfair Display', serif;
 }
+
