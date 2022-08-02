@@ -89,30 +89,47 @@
 
     <h2>@header</h2>
 
-    <header>
-        <img src="images/hero.svg" />
-        <h1>heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-image" src="images/hero.svg" />
+        <h1 class="hero-heading">a start of basic 
+             <span style="color: var(--primary-color);
+             font-weight:bold;font-style:oblique">web development</span></h1>
     </header>
 
    <hr>
 
    <h2>@section</h2>
    <section>
+    <div class="container container-center ">
     <h3>white background</h3>
-    <p>this will have whote bg</p>
+    <p>this will have whote bg 
+        At its heart, HTML is a 
+        language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This module will introduce the first two of these and introduce fundamental concepts and syntax you need to know to understand HTML.
+    </p>
+    </div>
    </section>
-   <section>
+
+   <section class="grey-bg">
+    <div class="container container-center">
     <h3>grey bg</h3>
-    <p> this will have grey bg</p>
+    <p> this will have grey bg  At its heart, HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This module will introduce the first two of these and introduce fundamental concepts and syntax you need to know to understand HTML.</p>
+    </div>
 </section>
 <hr>
 <h2>@footer</h2>
-<footer>
-    <div> do not use h1 and h2 in footer</div>
-    <ul>
-        <li>social one</li>
-        <li>social two</li>
-        <li>social 3</li>
+<footer class="navigation">
+    <div> Do not use <span style="font-weight:bold;color: yellow;">h1,h2 </span>in footer</div>
+    <ul class="lists">
+        <li class="list-item-inline">
+            <a class="link" href="/">social one</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="/">social two</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="/">social two</a>
+        </li>
+    
     </ul>
 </footer>
 

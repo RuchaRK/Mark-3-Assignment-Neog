@@ -20,7 +20,10 @@ h2{
 :root
 {
     --primary-color:#c2410c;
+    --blue-color:#9333ea;
+    --grey-color:#6b7280;
 }
+
 
 body{
     font-family: 'Playfair Display', serif;
@@ -82,4 +85,39 @@ hr{
     text-align: right;
     padding: 0.5rem 0.5rem;
 }
+/* header */
+.hero{
+    padding: 0.5rem;
+}
+.hero-image{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+.hero .hero-heading{
+    padding: 0.5rem;
+    color: var(--blue-color);
+}
+/* section */
 
+section h3{
+    text-align: center;
+    padding: 2rem;
+}
+
+.grey-bg{
+    background-color: var(--grey-color);
+    color: pink;
+    padding: 1rem;
+
+}
+/* footer */
+footer{
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    color: white;
+    
+
+}
