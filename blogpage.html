@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS In Real Life | adharshbalika</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-brand">I am brand</div>
+        <ul class="nav-item">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
+            </li>
+            <li class="list-item-inline" >
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline lists">
+                <a class="link" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <header class="hero">
+      
+        <h1 class="hero-heading">CSS In 
+             <span style="color: var(--primary-color);
+             font-weight:bold;font-style:oblique">{ Real Life }</span></h1>
+    </header> 
+   
+    <div class=" container container-center">
+        <h3 style="margin-bottom:0rem;">
+            Logical Properties for Useful Shorthand </h3>
+        <small>June 2022</small>  
+        <img style="margin-top:2rem;" class="hero-image" src="/images/css.svg" />
+        <p style="margin-top:2rem;"> Something I like about logical properties is the ability to set margins or padding on just a single axis on an element, while leaving the other alone. Say we have an element on which we’ve set some padding using the padding shorthand: </p>
+        <br>
+        <section style="padding-left: 2rem ;" class="color-bg">
+            <code>
+                /* This gives us 1rem padding all the way around */<br>
+               <br>
+                .box { <br>
+                  padding: 1rem;<br>
+                }
+                      </code>
+             </section>
+             <p style="margin-top:2rem;">If, later on, we want to adjust the padding only on the x-axis (while preserving our original value on the y-axis), we have a couple of choices: </p>
+             <ol>
+                <li>
+                    We could use <span style="font-weight: bold;">padding-left</span>  and <span style="font-weight: bold;">padding-right</span>. Fine, but longer than our original shorthand.
+                    <section style="padding-left: 2rem ;" class="color-bg">
+                        <code>     
+                           .box--some-variant {<br>
+                            padding-right: 2rem;<br>
+                            padding-left: 2rem;<br>
+                          }<br>
+                                  </code>
+                         </section>
+                         <br>   
+                </li>
+                <li>
+                    We could use the shorthand, but remembering to include our original values.
+                </li>
+                <section style="padding-left: 2rem ;" class="color-bg">
+                    <code>
+                        .box--some-variant {<br>
+                            padding: 1rem 2rem;<br>
+                          }<br>
+                              </code>
+                     </section>
+             </ol>
+             <p style="margin-top:2rem;"> The same applies to margins, borders and a bunch of others. And check out the inset property for a great positioning shorthand! <br>
+                Logical properties are very well supported in browsers now, so it’s a good time to start using them. </p>
+        <br>
+        <hr>
+        <a class = "link secondary-link" href="https://designformankind.com/blog/">Previous</a>
+        <div align="right">
+            <a class = "link secondary-link" href="https://bemorewithless.com/blog/">Next</a>
+        </div>
+        
+        <br>
+        </div>
+        
+
+
+
+<footer class="navigation">
+    <div> You can find me  <span style="font-weight:bold;color: yellow;">online </span>here</div>
+    <ul class="lists">
+        <li class="list-item-inline">
+            <a class="link" href="https://in.linkedin.com/">LinkedIn</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="https://twitter.com/i/flow/login">Twitter</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="https://github.com/">Git</a>
+        </li>
+    
+    </ul>
+</footer>
+ 
+
+
+    
+</body>
+</html>
