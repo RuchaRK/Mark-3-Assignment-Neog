@@ -20,15 +20,18 @@ h2{
 
 :root
 {
-    --primary-color:#c2410c;
+    --primary-color:#3EB489;
     --blue-color:#9333ea;
     --grey-color:#6b7280;
+    --off-white:#f3f4f6;
 }
 
 
 body{
     font-family: 'Playfair Display', serif;
+    
 }
+
 hr{
     margin: 2rem 0rem ;
    
@@ -55,6 +58,8 @@ hr{
     border-radius: 0.5rem;
     color: white; 
     margin-top: 0.5rem;  
+    
+  
     
 }
 .secondary-link{
@@ -91,6 +96,7 @@ hr{
 .link{
     padding: 0.5rem 1rem;
     text-decoration: none;
+    text-align: center;
 
 }
 .navigation .nav-item{
@@ -118,21 +124,17 @@ section{
     padding-bottom: 1.5rem;
     padding-top: 0.5rem;
     margin-top: 1rem;
-}
-section h3{
-    text-align: center;   
+    text-align: center;
 }
 
-.color-bg{
-    background-color: #a3a3a3;
-    color:black;
+section p{
     
+    padding: 1rem 1rem;
 }
+
 
 .grey-bg{
-    background-color: var(--grey-color);
-    color: pink;
-
+    background-color: var(--off-white);
 }
  
 /* footer */
