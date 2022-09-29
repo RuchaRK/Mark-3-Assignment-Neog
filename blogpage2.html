@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog2 | Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-brand">Rucha Kathar
+        </div>
+        <ul class="nav-item">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
+            </li>
+            <li class="list-item-inline" >
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline lists">
+                <a class="link" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <header class="hero">
+      
+        <h1 class="hero-heading">Let vs Var vs Const </h1>
+    </header> 
+   
+    <div class=" container container-center">
+        <h3 style="margin-bottom:0rem;">
+            JavaScript Var vs Let vs Const </h3>
+        <small>June 2022</small>  
+        <img style="margin-top:2rem;" class="hero-image" src="/images/js-diff.jpeg" />
+        <p style="margin-top:2rem;word-spacing: 0.5rem;"> If you have read any JavaScript programming tutorials then chances are you have run into code where variables are defined using a combination of var, let, and const. It can be confusing at first to understand why someone would use one over the other for defining variables, so in this article I am going to breakdown the exact differences between var, let, and const so you know exactly when to use each. </p>
+        <br>
+        <h3>Understanding Var </h3>
+        <p style="word-spacing:0.5rem ;">Before the introduction of ES6, JavaScript only had one way to define variables which was the var keyword. This worked fine for many years, but var works differently than most other programming languages when it comes to how the variable that is created is scoped.
+
+            The var keyword creates variables which are function scoped. This means that any variable created with var is available anywhere in the function in which it is defined. For example in the below code the name variable is available outside the if statement in which it is defined because var variables are available anywhere in the function that they are defined.</p>
+        <section style="padding-left: 2rem ;" class="color-bg">
+            <code>
+               
+                function print() { <br>
+                    if (true) {<br>
+                      var name = 'Kyle'<br>
+                    }<br>
+                    console.log(name)<br>
+                  }
+                      </code>
+             </section>
+
+        <h3>Understanding Const/Let</h3>
+             <p style="margin-top:2rem;word-spacing: 0.5rem;">This behavior is obviously much different than most other programming languages, so with ES6 JavaScript introduced let and const which work more like variables in other programming languages. let and const are block scoped which means that they are only available inside the block in which they are defined </p>
+             <ol>
+                <li>
+                    For example, this could be a function, if block, for loop, etc. If the previous examples used the let or const keyword instead of var they would throw an error since the variable is not defined in the block in which it is used.
+                    <section style="padding-left: 2rem ;" class="color-bg">
+                        <code>     
+                            if (true) {<br>
+                                let name = 'Kyle'<br>
+                              }<br>
+                              console.log(name)<br>
+                              // Uncaught ReferenceError: name is not defined
+                                  </code>
+                         </section>
+                         <br>  
+
+                </li>
+                <li>
+                    In order to make the above code function the console.log would need to be moved into the block with the name.
+                </li>
+                <section style="padding-left: 2rem ;" class="color-bg">
+                    <code>
+                        if (true) {<br>
+                            let name = 'Kyle'<br>
+                            console.log(name)<br>
+                            // Prints: Kyle<br>
+                          }
+                              </code>
+                     </section>
+             </ol>
+             <p style="margin-top:2rem;"> The same applies to margins, borders and a bunch of others. And check out the inset property for a great positioning shorthand! <br>
+                Logical properties are very well supported in browsers now, so it’s a good time to start using them. </p>
+        <br>
+        
+        <ol>
+            <li style="word-spacing: 0.5rem ;">
+                While block vs function scoping is the largest difference between the old var keyword and the new let/const keywords, there are still a few other differences between them. One of the major differences is that the variables defined by var are hoisted which means that they are available to be used even before they are defined.This is not the case for let/const, though. Just like in most other programming languages, a variable declared with let/const must be defined before it is used the first time.
+                
+
+            </li>
+            <br>
+            <li style="word-spacing:0.5rem ;">The last major difference, is that var variables can be redeclared with the var keyword, while trying to redeclare a variable with the let keyword will throw an error. For example the following code will change the name variable.
+               
+            </li>
+            <br>
+            <li style="word-spacing :0.5rem ;">
+                We have talked a bunch about the differences between var and let/const, but there is one big difference between let and const that we need to talk about. This difference is that variables defined by const can never be changed, while variables defined by let can be changed whenever.
+            </li>
+           
+         </ol>
+         <br>
+         <hr>
+
+        <a class = "link secondary-link" href="blogpage1.html">Previous</a>
+        <div align="right">
+            <a class = "link secondary-link" href="blogs.html">Next</a>
+        </div>
+        
+        <br>
+        </div>
+    
+
+<footer class="navigation">
+    <div> You can find me  <span style="font-weight:bold;color: yellow;">online </span>here</div>
+    <ul class="lists">
+        <li class="list-item-inline">
+            <a class="link" href="https://in.linkedin.com/">LinkedIn</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="https://twitter.com/i/flow/login">Twitter</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="https://github.com/">Git</a>
+        </li>
+    
+    </ul>
+</footer>
+ 
+
+
+    
+</body>
+</html>
